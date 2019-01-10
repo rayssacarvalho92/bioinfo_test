@@ -1,20 +1,22 @@
 # Instruções teste bioinfo
-#Pré-requisitos:
+##Pré-requisitos:
+
 Para rodar o projeto é necessário:
-  Python 3
-  PostgreSQL
+  >Python 3
+  >PostgreSQL
   
 Além dos pacotes e bibliotecas:
-  psycopg2
-  flask
-  flask_restful
-  requests
-  ast
+  >psycopg2
+  >flask
+  >flask_restful
+  >requests
+  >ast
   
 Caso estes já não estejam instalados, instalar através do comando pip, exemplo:
 
-  pip install psycopg2
+  >pip install psycopg2
   
+##Rodando o projeto
 #Create_database
 1) Create_database cria a base de dados 'rayssa_bioinfo' no banco de dados do Postgres para que essa base em comum seja acessada pelo crawler e pelo api_rayssa
 
@@ -36,15 +38,15 @@ Caso estes já não estejam instalados, instalar através do comando pip, exempl
 
 3) Para executar: python ./crawler.py
   Aparecerá resposta:
-    * Serving Flask app "api_rayssa" (lazy loading)
-    * Environment: production
-     WARNING: Do not use the development server in a production environment.
-     Use a production WSGI server instead.
-    * Debug mode: on
-    * Restarting with stat
-    * Debugger is active!
-    * Debugger PIN: 280-068-427
-    * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+   > * Serving Flask app "api_rayssa" (lazy loading)
+   > * Environment: production
+   >  WARNING: Do not use the development server in a production environment.
+   >  Use a production WSGI server instead.
+   > * Debug mode: on
+   > * Restarting with stat
+   > * Debugger is active!
+   > * Debugger PIN: 280-068-427
+   > * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
     
  4) Abrir o browser e fornecer a lista de genes necessária, exemplo:
     http://localhost:5000/phenotypetogene/genes/['CENPJ']

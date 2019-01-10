@@ -1,5 +1,5 @@
 # Instruções teste bioinfo
-##Pré-requisitos:
+## Pré-requisitos:
 
 Para rodar o projeto é necessário:
   >Python 3
@@ -16,22 +16,23 @@ Caso estes já não estejam instalados, instalar através do comando pip, exempl
 
   >pip install psycopg2
   
-##Rodando o projeto
-#Create_database
+## Rodando o projeto
+
+### Create_database
 1) Create_database cria a base de dados 'rayssa_bioinfo' no banco de dados do Postgres para que essa base em comum seja acessada pelo crawler e pelo api_rayssa
 
 2) Caso as configurações do Postgresql sejam diferentes das default, é necessário mudá-las no arquivo onde há o comentário #CHANGE NECESSARY POSTGRES SETTINGS
 
 3) Para executar: python ./create_database.py
 
-#Crawler
+### Crawler
 1) Crawler faz o download da informação contida no link fornecido e armazena em uma tabela na base de dados criada anteriormente
 
 2) Caso as configurações do Postgresql sejam diferentes das default, é necessário mudá-las no arquivo onde há o comentário #CHANGE NECESSARY POSTGRES SETTINGS
 
 3) Para executar: python ./crawler.py
 
-#Api_rayssa
+### Api_rayssa
 1) Api_rayssa retorna os fenótipos referentes à lista de genes fornecida.
 
 2) Caso as configurações do Postgresql sejam diferentes das default, é necessário mudá-las no arquivo onde há o comentário #CHANGE NECESSARY POSTGRES SETTINGS
